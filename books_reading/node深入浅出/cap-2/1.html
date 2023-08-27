@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CommonJS 规范 | From the sea</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/ocean.png">
+    <meta name="description" content="欢迎来到我的个人博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.6cce5ce2.css" as="style"><link rel="preload" href="/assets/js/app.332fdff1.js" as="script"><link rel="preload" href="/assets/js/2.e516e65e.js" as="script"><link rel="preload" href="/assets/js/9.d60003d7.js" as="script"><link rel="prefetch" href="/assets/js/10.ead9c743.js"><link rel="prefetch" href="/assets/js/11.636deb04.js"><link rel="prefetch" href="/assets/js/12.50f993aa.js"><link rel="prefetch" href="/assets/js/13.a6941309.js"><link rel="prefetch" href="/assets/js/14.2a0d2878.js"><link rel="prefetch" href="/assets/js/15.adfeed8c.js"><link rel="prefetch" href="/assets/js/16.d3c53258.js"><link rel="prefetch" href="/assets/js/17.9284d783.js"><link rel="prefetch" href="/assets/js/18.70745b57.js"><link rel="prefetch" href="/assets/js/19.816d655b.js"><link rel="prefetch" href="/assets/js/20.de623992.js"><link rel="prefetch" href="/assets/js/21.a4e989ee.js"><link rel="prefetch" href="/assets/js/22.6db6950f.js"><link rel="prefetch" href="/assets/js/23.10201e53.js"><link rel="prefetch" href="/assets/js/24.0e065103.js"><link rel="prefetch" href="/assets/js/25.4de8c2a6.js"><link rel="prefetch" href="/assets/js/26.30d58691.js"><link rel="prefetch" href="/assets/js/27.71e7f701.js"><link rel="prefetch" href="/assets/js/28.0194494e.js"><link rel="prefetch" href="/assets/js/29.c595795d.js"><link rel="prefetch" href="/assets/js/3.f9e138c6.js"><link rel="prefetch" href="/assets/js/30.2f0815a4.js"><link rel="prefetch" href="/assets/js/31.ccb402bf.js"><link rel="prefetch" href="/assets/js/32.bc2e5c64.js"><link rel="prefetch" href="/assets/js/33.46ded78f.js"><link rel="prefetch" href="/assets/js/34.eec0b25f.js"><link rel="prefetch" href="/assets/js/35.c2182556.js"><link rel="prefetch" href="/assets/js/36.34221f6f.js"><link rel="prefetch" href="/assets/js/37.ed625a12.js"><link rel="prefetch" href="/assets/js/38.d8d8ca79.js"><link rel="prefetch" href="/assets/js/39.baffafa4.js"><link rel="prefetch" href="/assets/js/4.78c10fb6.js"><link rel="prefetch" href="/assets/js/40.52a0bca0.js"><link rel="prefetch" href="/assets/js/41.3e7bfc7a.js"><link rel="prefetch" href="/assets/js/42.799bf4c9.js"><link rel="prefetch" href="/assets/js/43.af559ed4.js"><link rel="prefetch" href="/assets/js/44.c0536af2.js"><link rel="prefetch" href="/assets/js/45.d6ac68d9.js"><link rel="prefetch" href="/assets/js/46.431ebfc7.js"><link rel="prefetch" href="/assets/js/47.07ef9e02.js"><link rel="prefetch" href="/assets/js/48.aa877f22.js"><link rel="prefetch" href="/assets/js/49.3a2d885a.js"><link rel="prefetch" href="/assets/js/5.e6d59271.js"><link rel="prefetch" href="/assets/js/50.3ab02dba.js"><link rel="prefetch" href="/assets/js/51.6fcc5d4a.js"><link rel="prefetch" href="/assets/js/52.45956cd0.js"><link rel="prefetch" href="/assets/js/53.25678018.js"><link rel="prefetch" href="/assets/js/54.2bab7b48.js"><link rel="prefetch" href="/assets/js/55.c3d585c8.js"><link rel="prefetch" href="/assets/js/56.268e3b8a.js"><link rel="prefetch" href="/assets/js/57.10935482.js"><link rel="prefetch" href="/assets/js/58.b1a6ab7f.js"><link rel="prefetch" href="/assets/js/59.c44df842.js"><link rel="prefetch" href="/assets/js/6.c432485c.js"><link rel="prefetch" href="/assets/js/60.ffe5eda3.js"><link rel="prefetch" href="/assets/js/61.2cb7e81c.js"><link rel="prefetch" href="/assets/js/62.8f133867.js"><link rel="prefetch" href="/assets/js/63.4ad312e2.js"><link rel="prefetch" href="/assets/js/64.6b15c868.js"><link rel="prefetch" href="/assets/js/65.8d1ae2e8.js"><link rel="prefetch" href="/assets/js/66.dec1dd24.js"><link rel="prefetch" href="/assets/js/67.0d0e3edd.js"><link rel="prefetch" href="/assets/js/68.2dde95f1.js"><link rel="prefetch" href="/assets/js/69.f623bb0f.js"><link rel="prefetch" href="/assets/js/7.992fed1b.js"><link rel="prefetch" href="/assets/js/70.10e031da.js"><link rel="prefetch" href="/assets/js/71.cee8d648.js"><link rel="prefetch" href="/assets/js/72.9364881f.js"><link rel="prefetch" href="/assets/js/73.68e73668.js"><link rel="prefetch" href="/assets/js/74.3eae1c3c.js"><link rel="prefetch" href="/assets/js/75.cc327c74.js"><link rel="prefetch" href="/assets/js/76.440f4e4f.js"><link rel="prefetch" href="/assets/js/77.9d8c87ee.js"><link rel="prefetch" href="/assets/js/78.eb50427b.js"><link rel="prefetch" href="/assets/js/79.216e0e1f.js"><link rel="prefetch" href="/assets/js/8.a03d256a.js"><link rel="prefetch" href="/assets/js/80.d741d6af.js"><link rel="prefetch" href="/assets/js/81.0f88eefc.js"><link rel="prefetch" href="/assets/js/82.27bddb44.js"><link rel="prefetch" href="/assets/js/83.5b0db002.js"><link rel="prefetch" href="/assets/js/84.da7566e8.js"><link rel="prefetch" href="/assets/js/85.8b3c1440.js"><link rel="prefetch" href="/assets/js/86.773048e8.js"><link rel="prefetch" href="/assets/js/87.56bc1cd3.js"><link rel="prefetch" href="/assets/js/88.f806c1af.js"><link rel="prefetch" href="/assets/js/89.97b3f67a.js"><link rel="prefetch" href="/assets/js/90.ccb4a818.js"><link rel="prefetch" href="/assets/js/91.41667fc3.js"><link rel="prefetch" href="/assets/js/92.15abb708.js"><link rel="prefetch" href="/assets/js/93.d97bf099.js"><link rel="prefetch" href="/assets/js/94.1ea4f874.js"><link rel="prefetch" href="/assets/js/95.66e716f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6cce5ce2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/ocean.png" alt="From the sea" class="logo"> <span class="site-name can-hide">From the sea</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  个人学习
+</a></div><div class="nav-item"><a href="/books_reading/" class="nav-link router-link-active">
+  读书笔记
+</a></div><div class="nav-item"><a href="https://github.com/zch1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link">
+  个人学习
+</a></div><div class="nav-item"><a href="/books_reading/" class="nav-link router-link-active">
+  读书笔记
+</a></div><div class="nav-item"><a href="https://github.com/zch1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>你不知道的JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🗡☞offer</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>算法图解</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>深入浅出Node.js</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>第二章 模块机制</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/books_reading/node深入浅出/cap-2/1.html" class="active sidebar-link">CommonJS 规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books_reading/node深入浅出/cap-2/1.html#commonjs-的模块规范" class="sidebar-link">CommonJS 的模块规范</a></li><li class="sidebar-sub-header"><a href="/books_reading/node深入浅出/cap-2/1.html#node-的模块实现" class="sidebar-link">Node 的模块实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books_reading/node深入浅出/cap-2/1.html#路径分析" class="sidebar-link">路径分析</a></li><li class="sidebar-sub-header"><a href="/books_reading/node深入浅出/cap-2/1.html#文件定位" class="sidebar-link">文件定位</a></li></ul></li><li class="sidebar-sub-header"><a href="/books_reading/node深入浅出/cap-2/1.html#模块编译" class="sidebar-link">模块编译</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>第六章 理解Buffer</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript语言精粹</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="commonjs-规范"><a href="#commonjs-规范" class="header-anchor">#</a> CommonJS 规范</h1> <h2 id="commonjs-的模块规范"><a href="#commonjs-的模块规范" class="header-anchor">#</a> CommonJS 的模块规范</h2> <ol><li>模块引用<br>
+在 CommonJS 规范中，存在 require()方法，这个方法接受一个模块标识，以此引入一个模块的 API 到当前的上下文中。</li> <li>模块定义<br>
+在模块中，上下文提供 require()方法来引入外部模块。对应引入的功能，上下文提供了 exports 对象用于导出当前模块的方法或者变量，并且他是唯一的导出接口。在模块中，还存在一个 module 对象，它代表模块自身，exports 是 module 的属性。</li> <li>模块标识<br>
+模块标识其实就是传递给 require()方法的参数，它必须是符合 小驼峰命名的字符串，或者是相对路径，绝对路径。
+每个模块具有独立的空间，它们互不干扰，在引用的时候也显得干净利落,用户也<strong>完全不用考虑变量污染</strong>。
+<img src="/assets/img/require_module.1ea3e7f0.jpeg" alt="avatar"></li></ol> <h2 id="node-的模块实现"><a href="#node-的模块实现" class="header-anchor">#</a> Node 的模块实现</h2> <p>在 Node 中引入模块，需要经历一下 3 个步骤：<br></p> <ol><li>路径分析</li> <li>文件定位</li> <li>编译执行
+而模块又分为两类，一类是核心模块，既 Node 提供的模块；一类是文件模块，既用户自己编写的模块。</li></ol> <ul><li>核心模块，在 Node 源代码的编译过程中，编译成了二进制模块，在 Node 进程启动时，部分核心模块直接加载进了内存中，所以部分核心模块引入时，文件定位和编译执行被忽略掉，路径分析也优先判断，所以它的加载速度是最快的</li> <li>文件模型是运行时动态加载，需要完整的三个步骤流程才行，所速度会比核心模块慢。</li></ul> <p>需要注意的是，Node 和前端浏览器会缓存静态脚本文件以提高性能一样，Node 也会对引入的模块进行缓存，不过浏览器仅仅缓存文件，而<strong>Node 缓存的是编译和执行之后的对象</strong>（require 对相同模块的二次加载一律采用缓存优先的方式，不过核心模块的缓存检查还是先于文件模块的缓存检查）</p> <h3 id="路径分析"><a href="#路径分析" class="header-anchor">#</a> 路径分析</h3> <ul><li>模块标识符分析
+模块标识符在 Node 中主要分为一下积几类：</li></ul> <ol><li>核心模块</li> <li>以.或..开始的相对路径文件模块</li> <li>以/开始的绝对路径模块文件</li> <li>非路径形式的文件模块</li></ol> <ul><li><p>核心模块
+加载优先级仅次于缓存加载，因为他在 Node 的源代码编译过程中已经编译成了二进制代码。</p></li> <li><p>路径形式的文件模块
+分析模块时，require()方法会将路径转为真实路径，以真实路径作为索引，并将编译执行后的结果存放到缓存中，以便二次加载。</p></li> <li><p>自定义模块
+主要采用一种叫模块路径的查找策略，模块路径具体表现为一个路径组成的数组。<br>
+这个我们可以编写一个 js 文件查看，例如：<br></p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>module<span class="token punctuation">.</span>paths<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>我们执行这个文件可以得到一下输出：<br> <img src="/assets/img/module.b6e028d3.png" alt="avatar"></p> <p>模块路径的生成规则：<br>
+❑ 当前文件目录下的 node_modules 目录。<br>
+❑ 父目录下的 node_modules 目录。<br>
+❑ 父目录的父目录下的 node_modules 目录。<br>
+❑ 沿路径向上逐级递归，直到根目录下的 node_modules 目录。<br></p> <h3 id="文件定位"><a href="#文件定位" class="header-anchor">#</a> 文件定位</h3> <p>缓存加载不需要路径分析，问价定位和编译执行过程</p> <ul><li><p>文件扩展名分析
+CommonJS 模块允许在标识符中不包含文件扩展名，它会按.js, .json, .node 的次序以此补全，依次尝试。<br>
+在尝试过程中，需要调用 fs 模块同步阻塞式地判断文件是否存在。因为 node 是单线程的，所以这里会引起性能问题。<br>
+小诀窍：1. 如果是.node 或 .json 文件，我们可以加上扩展名。 2. 同步配合缓存</p></li> <li><p>目录分析和包
+require()在通过文件扩展民查找文件之后，没有找到响应文件，但获得了一个目录，此时 Node 会将当作一个包来处理。<br>
+Node 在当期目录下查找 package.json，通过 JSON.parse()解析出包描述对象，去除 main 属性指定的文件名进行定位，并进行文件扩展名分析，如果 main 指定的文件错误，或者没有 package.json 文件，Node 默认将 index 当作默认文件名，进行文件扩展名分析。<br>
+require()通过模块路径路径查找，没找到就进入下一个模块中。如果都没找到，就报错</p></li></ul> <h2 id="模块编译"><a href="#模块编译" class="header-anchor">#</a> 模块编译</h2> <p>定位到具体的文件后，Node 会新建一个模块对象，然后根据路径载入并编译。<br></p> <ul><li><p>不同的文件扩展名，载入方法也不同：<br>
+❑ .js 文件。通过 fs 模块同步读取文件后编译执行。<br>
+❑ .node 文件。这是用 C/C++编写的扩展文件，通过 dlopen()方法加载最后编译生成的文件。<br>
+❑ .json 文件。通过 fs 模块同步读取文件后，用 JSON.parse()解析返回结果。<br>
+❑ 其余扩展名文件。它们都被当做．js 文件载入。<br>
+每一个成功编译的模块都会将起文件路径作为索引缓存在 Module._cache 对象上，以提高二次引入的性能。</p></li> <li><p>javascript 模块的编译
+javascript 模块会被 Node 头尾包装，在头部添加了(function (exports, require, module, **filename, **dirname){\n,在尾部添加了\n}<br>
+这样每个模块之间都进行了作用域隔离，不染全局变量。包装后的代码会通过 vm 原生模块的 runInThisContext()方法执行(类似 eval,只具有明确上下文，不污染全局)，返回一个具体的 function 对象。<br>
+再执行之后，模块的 exports 属性返回给了调用方。exports 属性上的任何方法都可以被外部调用到，但是模块中的其余变量则不可被调用。</p></li> <li><p>c/c++模块的编译
+Node 调用 process_dlopen()方法进行加载和执行。window 和*nix 平台下分别有不同的实现，通过<strong>linuv 兼容层</strong>进行了封装。<br>
+实际上.node 文件只需要加载和执行。在执行的过程中，模块的 exports 对象与.node 模块产生联系，然后返回给调用者。所以 c/c++模块执行效率会更高些。</p></li> <li><p>JSON 模块的编译
+Ndoe 通过 fs 模块同步读取 JSON 文件的内容之后，调用 JSON.parse()方法得到对象，然后将它赋值给模块对象的 exports，以供外部调用。<br>
+根据这个，我们将 JSON 文件用在项目的配置文件时比较有用，我们可以不用 fs 模块去异步读取和解析，只需要 require()即可。</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/books_reading/算法图解/three.html" class="prev">
+        第三章
+      </a></span> <span class="next"><a href="/books_reading/node深入浅出/cap-6/1.html">
+        Buffer结构
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.332fdff1.js" defer></script><script src="/assets/js/2.e516e65e.js" defer></script><script src="/assets/js/9.d60003d7.js" defer></script>
+  </body>
+</html>

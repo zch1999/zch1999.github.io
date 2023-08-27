@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>445.两个链表相加 | From the sea</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/ocean.png">
+    <meta name="description" content="欢迎来到我的个人博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.6cce5ce2.css" as="style"><link rel="preload" href="/assets/js/app.332fdff1.js" as="script"><link rel="preload" href="/assets/js/2.e516e65e.js" as="script"><link rel="preload" href="/assets/js/81.0f88eefc.js" as="script"><link rel="prefetch" href="/assets/js/10.ead9c743.js"><link rel="prefetch" href="/assets/js/11.636deb04.js"><link rel="prefetch" href="/assets/js/12.50f993aa.js"><link rel="prefetch" href="/assets/js/13.a6941309.js"><link rel="prefetch" href="/assets/js/14.2a0d2878.js"><link rel="prefetch" href="/assets/js/15.adfeed8c.js"><link rel="prefetch" href="/assets/js/16.d3c53258.js"><link rel="prefetch" href="/assets/js/17.9284d783.js"><link rel="prefetch" href="/assets/js/18.70745b57.js"><link rel="prefetch" href="/assets/js/19.816d655b.js"><link rel="prefetch" href="/assets/js/20.de623992.js"><link rel="prefetch" href="/assets/js/21.a4e989ee.js"><link rel="prefetch" href="/assets/js/22.6db6950f.js"><link rel="prefetch" href="/assets/js/23.10201e53.js"><link rel="prefetch" href="/assets/js/24.0e065103.js"><link rel="prefetch" href="/assets/js/25.4de8c2a6.js"><link rel="prefetch" href="/assets/js/26.30d58691.js"><link rel="prefetch" href="/assets/js/27.71e7f701.js"><link rel="prefetch" href="/assets/js/28.0194494e.js"><link rel="prefetch" href="/assets/js/29.c595795d.js"><link rel="prefetch" href="/assets/js/3.f9e138c6.js"><link rel="prefetch" href="/assets/js/30.2f0815a4.js"><link rel="prefetch" href="/assets/js/31.ccb402bf.js"><link rel="prefetch" href="/assets/js/32.bc2e5c64.js"><link rel="prefetch" href="/assets/js/33.46ded78f.js"><link rel="prefetch" href="/assets/js/34.eec0b25f.js"><link rel="prefetch" href="/assets/js/35.c2182556.js"><link rel="prefetch" href="/assets/js/36.34221f6f.js"><link rel="prefetch" href="/assets/js/37.ed625a12.js"><link rel="prefetch" href="/assets/js/38.d8d8ca79.js"><link rel="prefetch" href="/assets/js/39.baffafa4.js"><link rel="prefetch" href="/assets/js/4.78c10fb6.js"><link rel="prefetch" href="/assets/js/40.52a0bca0.js"><link rel="prefetch" href="/assets/js/41.3e7bfc7a.js"><link rel="prefetch" href="/assets/js/42.799bf4c9.js"><link rel="prefetch" href="/assets/js/43.af559ed4.js"><link rel="prefetch" href="/assets/js/44.c0536af2.js"><link rel="prefetch" href="/assets/js/45.d6ac68d9.js"><link rel="prefetch" href="/assets/js/46.431ebfc7.js"><link rel="prefetch" href="/assets/js/47.07ef9e02.js"><link rel="prefetch" href="/assets/js/48.aa877f22.js"><link rel="prefetch" href="/assets/js/49.3a2d885a.js"><link rel="prefetch" href="/assets/js/5.e6d59271.js"><link rel="prefetch" href="/assets/js/50.3ab02dba.js"><link rel="prefetch" href="/assets/js/51.6fcc5d4a.js"><link rel="prefetch" href="/assets/js/52.45956cd0.js"><link rel="prefetch" href="/assets/js/53.25678018.js"><link rel="prefetch" href="/assets/js/54.2bab7b48.js"><link rel="prefetch" href="/assets/js/55.c3d585c8.js"><link rel="prefetch" href="/assets/js/56.268e3b8a.js"><link rel="prefetch" href="/assets/js/57.10935482.js"><link rel="prefetch" href="/assets/js/58.b1a6ab7f.js"><link rel="prefetch" href="/assets/js/59.c44df842.js"><link rel="prefetch" href="/assets/js/6.c432485c.js"><link rel="prefetch" href="/assets/js/60.ffe5eda3.js"><link rel="prefetch" href="/assets/js/61.2cb7e81c.js"><link rel="prefetch" href="/assets/js/62.8f133867.js"><link rel="prefetch" href="/assets/js/63.4ad312e2.js"><link rel="prefetch" href="/assets/js/64.6b15c868.js"><link rel="prefetch" href="/assets/js/65.8d1ae2e8.js"><link rel="prefetch" href="/assets/js/66.dec1dd24.js"><link rel="prefetch" href="/assets/js/67.0d0e3edd.js"><link rel="prefetch" href="/assets/js/68.2dde95f1.js"><link rel="prefetch" href="/assets/js/69.f623bb0f.js"><link rel="prefetch" href="/assets/js/7.992fed1b.js"><link rel="prefetch" href="/assets/js/70.10e031da.js"><link rel="prefetch" href="/assets/js/71.cee8d648.js"><link rel="prefetch" href="/assets/js/72.9364881f.js"><link rel="prefetch" href="/assets/js/73.68e73668.js"><link rel="prefetch" href="/assets/js/74.3eae1c3c.js"><link rel="prefetch" href="/assets/js/75.cc327c74.js"><link rel="prefetch" href="/assets/js/76.440f4e4f.js"><link rel="prefetch" href="/assets/js/77.9d8c87ee.js"><link rel="prefetch" href="/assets/js/78.eb50427b.js"><link rel="prefetch" href="/assets/js/79.216e0e1f.js"><link rel="prefetch" href="/assets/js/8.a03d256a.js"><link rel="prefetch" href="/assets/js/80.d741d6af.js"><link rel="prefetch" href="/assets/js/82.27bddb44.js"><link rel="prefetch" href="/assets/js/83.5b0db002.js"><link rel="prefetch" href="/assets/js/84.da7566e8.js"><link rel="prefetch" href="/assets/js/85.8b3c1440.js"><link rel="prefetch" href="/assets/js/86.773048e8.js"><link rel="prefetch" href="/assets/js/87.56bc1cd3.js"><link rel="prefetch" href="/assets/js/88.f806c1af.js"><link rel="prefetch" href="/assets/js/89.97b3f67a.js"><link rel="prefetch" href="/assets/js/9.d60003d7.js"><link rel="prefetch" href="/assets/js/90.ccb4a818.js"><link rel="prefetch" href="/assets/js/91.41667fc3.js"><link rel="prefetch" href="/assets/js/92.15abb708.js"><link rel="prefetch" href="/assets/js/93.d97bf099.js"><link rel="prefetch" href="/assets/js/94.1ea4f874.js"><link rel="prefetch" href="/assets/js/95.66e716f2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6cce5ce2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/ocean.png" alt="From the sea" class="logo"> <span class="site-name can-hide">From the sea</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">
+  个人学习
+</a></div><div class="nav-item"><a href="/books_reading/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="https://github.com/zch1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/study/" class="nav-link router-link-active">
+  个人学习
+</a></div><div class="nav-item"><a href="/books_reading/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="https://github.com/zch1999" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>javascript输出题，场景题</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>leetcode</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/study/leetcode/quick_sort.html" class="sidebar-link">排序算法之快速排序</a></li><li><a href="/study/leetcode/151.html" class="sidebar-link">151. 翻转字符串里的单词</a></li><li><a href="/study/leetcode/445.html" aria-current="page" class="active sidebar-link">445.两个链表相加</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study/leetcode/445.html#题目" class="sidebar-link">题目</a></li><li class="sidebar-sub-header"><a href="/study/leetcode/445.html#解法" class="sidebar-link">解法</a></li><li class="sidebar-sub-header"><a href="/study/leetcode/445.html#关键点解析" class="sidebar-link">关键点解析</a></li><li class="sidebar-sub-header"><a href="/study/leetcode/445.html#具体代码" class="sidebar-link">具体代码</a></li><li class="sidebar-sub-header"><a href="/study/leetcode/445.html#补链表逆转" class="sidebar-link">补链表逆转</a></li></ul></li><li><a href="/study/leetcode/flatten-a-multilevel-doubly-linked-list.html" class="sidebar-link">430. 扁平化多级双向链表</a></li><li><a href="/study/leetcode/1282.html" class="sidebar-link">1282.用户分组</a></li><li><a href="/study/leetcode/560.html" class="sidebar-link">560.和为K的子数组</a></li><li><a href="/study/leetcode/974.html" class="sidebar-link">974. 和可被 K 整除的子数组</a></li><li><a href="/study/leetcode/long_array.html" class="sidebar-link">128. 最长连续序列</a></li><li><a href="/study/leetcode/array_design.html" class="sidebar-link">380. 常数时间插入、删除和获取随机元素</a></li><li><a href="/study/leetcode/temperature.html" class="sidebar-link">739.每日温度</a></li><li><a href="/study/leetcode/recover_ip.html" class="sidebar-link">复原ip</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>手写</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>network</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>browser</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>React</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_445-两个链表相加"><a href="#_445-两个链表相加" class="header-anchor">#</a> 445.两个链表相加</h1> <h2 id="题目"><a href="#题目" class="header-anchor">#</a> 题目</h2> <p>给你两个 非空 链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
+你可以假设除了数字 0 之外，这两个数字都不会以零开头。</p> <blockquote><p>进阶：如果输入链表不能修改该如何处理？换句话说，你不能对列表中的节点进行翻转。</p></blockquote> <blockquote><p>示例<br>
+输入：(7 -&gt; 2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)<br>
+输出：7 -&gt; 8 -&gt; 0 -&gt; 7</p></blockquote> <h2 id="解法"><a href="#解法" class="header-anchor">#</a> 解法</h2> <p>由于需要从低位开始加，然后进位。 因此可以采用栈来简化操作。
+依次将两个链表的值分别入栈 stack1 和 stack2，然后相加入栈 stack，进位操作用一个变量 carried 记录即可。
+最后根据 stack 生成最终的链表即可。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>也可以先将两个链表逆置，然后相加，最后将结果再次逆置。</p></div> <h2 id="关键点解析"><a href="#关键点解析" class="header-anchor">#</a> 关键点解析</h2> <p>栈的基本操作
+carried 变量记录进位
+循环的终止条件设置成stack.length &gt; 0 可以简化操作
+注意特殊情况， 比如 1 + 99 = 100</p> <h2 id="具体代码"><a href="#具体代码" class="header-anchor">#</a> 具体代码</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">addTwoNumbers</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">l1<span class="token punctuation">,</span> l2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> m <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> k <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> cur1 <span class="token operator">=</span> l1<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> cur2 <span class="token operator">=</span> l2<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> jw <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>cur1<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        m<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>cur1<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+        cur1 <span class="token operator">=</span> cur1<span class="token punctuation">.</span>next
+    <span class="token punctuation">}</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>cur2<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        n<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>cur2<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+        cur2 <span class="token operator">=</span> cur2<span class="token punctuation">.</span>next
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> ans <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">||</span> n<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token number">0</span>
+        <span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span>n<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token number">0</span>
+        k<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token operator">+</span>jw<span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">)</span>
+        <span class="token keyword">let</span> cur <span class="token operator">=</span> <span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token operator">+</span>jw<span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">+</span>y<span class="token operator">+</span>jw <span class="token operator">&gt;=</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            jw <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            jw <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token punctuation">}</span>
+        
+        <span class="token keyword">let</span> curnode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span>cur<span class="token punctuation">)</span>
+        curnode<span class="token punctuation">.</span>next <span class="token operator">=</span> ans
+        ans <span class="token operator">=</span> curnode
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> l <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>jw <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        l<span class="token punctuation">.</span>next <span class="token operator">=</span> ans
+        <span class="token keyword">return</span> l
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> ans
+    <span class="token comment">// if(jw == 1){</span>
+    <span class="token comment">//     k.push(1)</span>
+    <span class="token comment">// }</span>
+    <span class="token comment">// const dummy = {};</span>
+
+    <span class="token comment">// let current = dummy;</span>
+  
+    <span class="token comment">// while (k.length &gt; 0) {</span>
+    <span class="token comment">//   current.next = {</span>
+    <span class="token comment">//     val: k.pop(),</span>
+    <span class="token comment">//     next: null</span>
+    <span class="token comment">//   };</span>
+  
+    <span class="token comment">//   current = current.next;</span>
+    <span class="token comment">// }</span>
+    <span class="token comment">// console.log(dummy.next)</span>
+    <span class="token comment">// return dummy.next;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="补链表逆转"><a href="#补链表逆转" class="header-anchor">#</a> 补链表逆转</h2> <ul><li><p>好理解的双指针
+定义两个指针： prepre 和 curcur ；prepre 在前 curcur 在后。
+每次让 prepre 的 nextnext 指向 curcur ，实现一次局部反转
+局部反转完成之后， prepre 和 curcur 同时往前移动一个位置
+循环上述过程，直至 prepre 到达链表尾部</p></li> <li><p>代码</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    ListNode<span class="token operator">*</span> <span class="token function">reverseList</span><span class="token punctuation">(</span><span class="token parameter">ListNode<span class="token operator">*</span> head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ListNode<span class="token operator">*</span> cur <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">,</span> <span class="token operator">*</span>pre <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>pre <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            ListNode<span class="token operator">*</span> t <span class="token operator">=</span> pre<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token punctuation">;</span>
+            pre<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">=</span> cur<span class="token punctuation">;</span>
+            cur <span class="token operator">=</span> pre<span class="token punctuation">;</span>
+            pre <span class="token operator">=</span> t<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> cur<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><p>简洁的递归
+使用递归函数，一直递归到链表的最后一个结点，该结点就是反转后的头结点，记作 retret .
+此后，每次函数在返回的过程中，让当前结点的下一个结点的 nextnext 指针指向当前节点。
+同时让当前结点的 nextnext 指针指向 NULLNULL ，从而实现从链表尾部开始的局部反转
+当递归函数全部出栈后，链表反转完成。</p></li> <li><p>代码</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    ListNode<span class="token operator">*</span> <span class="token function">reverseList</span><span class="token punctuation">(</span><span class="token parameter">ListNode<span class="token operator">*</span> head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">==</span> <span class="token constant">NULL</span> <span class="token operator">||</span> head<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        ListNode<span class="token operator">*</span> ret <span class="token operator">=</span> <span class="token function">reverseList</span><span class="token punctuation">(</span>head<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        head<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        head<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> ret<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><p>妖魔化的双指针
+原链表的头结点就是反转之后链表的尾结点，使用 headhead 标记 .
+定义指针 curcur，初始化为 headhead .
+每次都让 headhead 下一个结点的 nextnext 指向 curcur ，实现一次局部反转
+局部反转完成之后，curcur 和 headhead 的 nextnext 指针同时 往前移动一个位置
+循环上述过程，直至 curcur 到达链表的最后一个结点 .</p></li> <li><p>代码</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    ListNode<span class="token operator">*</span> <span class="token function">reverseList</span><span class="token punctuation">(</span><span class="token parameter">ListNode<span class="token operator">*</span> head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>head <span class="token operator">==</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        ListNode<span class="token operator">*</span> cur <span class="token operator">=</span> head<span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>head<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            ListNode<span class="token operator">*</span> t <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token punctuation">;</span>
+            head<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">=</span> cur<span class="token punctuation">;</span>
+            cur <span class="token operator">=</span> head<span class="token operator">-</span><span class="token operator">&gt;</span>next<span class="token punctuation">;</span>
+            head<span class="token operator">-</span><span class="token operator">&gt;</span>next <span class="token operator">=</span> t<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> cur<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p><a href="https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-shuang-zhi-zhen-di-gui-yao-mo-/" target="_blank" rel="noopener noreferrer">参考链接<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study/leetcode/151.html" class="prev">
+        151. 翻转字符串里的单词
+      </a></span> <span class="next"><a href="/study/leetcode/flatten-a-multilevel-doubly-linked-list.html">
+        430. 扁平化多级双向链表
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.332fdff1.js" defer></script><script src="/assets/js/2.e516e65e.js" defer></script><script src="/assets/js/81.0f88eefc.js" defer></script>
+  </body>
+</html>
